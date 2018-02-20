@@ -4,8 +4,11 @@ This is a ruby library to parse output of `terraform plan` into ruby hash.
 You might need it for running specs and use together with `ruby_terraform` gem.
 
 Status: experimental.
+This was a hack day project and coding style is very much suboptimal.
 
-Pull requests and bug reports are welcome.
+References to the similar libraries of better quality are welcome.
+
+Pull requests and bug reports are welcome too.
 
 ### Example
 
