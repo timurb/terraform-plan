@@ -30,8 +30,14 @@ describe 'module m1' do
       @plan
     end
 
+    let(:disk_names) { plan.disk_names_for('+ module.m1.vsphere_virtual_machine.vm') }
+
     it 'creates VM' do
       expect(plan).to have_key '+ module.m1.vsphere_virtual_machine.vm'
+    end
+
+   it 'processes server_prefix required param' do
+      expect(disk_names).to include 'foobar-prefix-01-disk1'
     end
 
     # ......... add more specs here ..........
